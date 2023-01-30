@@ -10,7 +10,7 @@
 
     <item
         android:id="@+id/notification"
-        android:icon="@drawable/baseline_notifications_24"
+        android:icon="@drawable/baseline_notifications_none_24"
         app:showAsAction="ifRoom|collapseActionView"/>
 
     <item

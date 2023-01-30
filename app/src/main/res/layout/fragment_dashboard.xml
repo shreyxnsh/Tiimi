@@ -79,16 +79,341 @@
                     android:layout_below="@id/taskLL"
                     android:background="@color/lightGrey" />
 
-                <com.google.android.material.tabs.TabLayout
-                    android:id="@+id/tab_layout"
+                <LinearLayout
+                    android:id="@+id/tabLL"
+                    android:layout_margin="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:weightSum="2"
+                    android:background="@drawable/round_back_white"
+                    android:layout_below="@id/taskLL">
+
+                    <TextView
+                        android:id="@+id/todayTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_back_selected"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:text="Today"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/completedTV"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="Completed"
+                        android:background="@drawable/round_back_white"
+                        android:gravity="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/poppinsbold"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/taskLL"
-                    />
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/view_pager"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:orientation="vertical"
+                    android:layout_below="@id/tabLL">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#f2f7f9"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent"
+                                android:background="#ff8401" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:weightSum="5"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_weight="7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/timeLL"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="8dp"
+                                            android:src="@drawable/baseline_time_24" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="6dp"
+                                            android:fontFamily="@font/poppinsemibold"
+                                            android:text="07:00 - 07:45 AM"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/timeLL"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppinsmedium"
+                                            android:text="Interview with candidates from product designer applicant"
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_weight="0.5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/tickbt"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                        </RelativeLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#f2f7f9"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent"
+                                android:background="#c16fc9" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:weightSum="5"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_weight="7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="8dp"
+                                            android:src="@drawable/baseline_time_24" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="6dp"
+                                            android:fontFamily="@font/poppinsemibold"
+                                            android:text="09:00 - 11:30 AM"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/timeLL"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppinsmedium"
+                                            android:text="Conduct test for UX Researcher candidates"
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_weight="0.5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/tickbt"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                        </RelativeLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#f2f7f9"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent"
+                                android:background="#c16fc9" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:weightSum="5"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_weight="7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_margin="8dp"
+                                            android:src="@drawable/baseline_time_24" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="6dp"
+                                            android:fontFamily="@font/poppinsemibold"
+                                            android:text="09:00 - 11:30 AM"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/timeLL"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppinsmedium"
+                                            android:text="Junior UI Designer Candidate Screening     "
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_weight="0.5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/tickbt"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                        </RelativeLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+
             </RelativeLayout>
 
 
