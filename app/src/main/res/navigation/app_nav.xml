@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@+id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.shreyxnsh.tiimi.ui.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="com.shreyxnsh.tiimi.ui.InboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/candidatesFragment"
+        android:name="com.shreyxnsh.tiimi.ui.CandidatesFragment"
+        android:label="fragment_candidates"
+        tools:layout="@layout/fragment_candidates" />
+    <fragment
+        android:id="@+id/jobsFragment"
+        android:name="com.shreyxnsh.tiimi.ui.JobsFragment"
+        android:label="fragment_jobs"
+        tools:layout="@layout/fragment_jobs" />
+</navigation>

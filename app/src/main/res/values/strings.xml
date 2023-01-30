@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TiimiPrototype</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="inbox">Inbox</string>
+    <string name="candidates">Candidates</string>
+    <string name="jobs">Jobs</string>
+</resources>
