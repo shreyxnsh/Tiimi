@@ -1,48 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="2dp"
-    app:cardUseCompatPadding="true">
-
-    <LinearLayout
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:background="#8FAAA9" >
+
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="124" />
 
         <View
-            android:layout_width="5dp"
-            android:layout_height="match_parent"
-            android:background="@color/black" />
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/primaryGreen" >
+        </View>
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="10dp">
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="80" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nilesh Rathod" />
+        <View
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="24dp"
+            android:background="#f2f7f9" >
+        </View>
+        <View
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="24dp"
+            android:background="#f2f7f9" >
+        </View>
+        <View
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="24dp"
+            android:background="#f2f7f9" >
+        </View>
+        <View
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="24dp"
+            android:background="#f2f7f9" >
+        </View>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nilesh Rathod" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nilesh Rathod" />
-
-        </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 
 
-</com.google.android.material.card.MaterialCardView>
+</LinearLayout>

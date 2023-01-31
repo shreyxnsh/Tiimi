@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -68,7 +67,7 @@
                         android:textAlignment="textEnd"
                         android:fontFamily="@font/poppinsmedium"
                         android:textColor="@color/primaryGreen"
-                        android:textSize="16sp"/>
+                        android:textSize="14sp"/>
 
                 </LinearLayout>
 
@@ -314,6 +313,7 @@
                     </com.google.android.material.card.MaterialCardView>
 
                     <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/lastCarc"
                         android:layout_width="match_parent"
                         android:layout_height="110dp"
                         android:layout_margin="10dp"
@@ -410,8 +410,672 @@
                     </com.google.android.material.card.MaterialCardView>
 
 
-                </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/pieLL"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@id/tabLL"
+                        android:orientation="horizontal">
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jobs"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View More"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/primaryGreen"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/taskLL"
+                        android:background="@color/lightGrey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="15dp"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+
+                        <org.eazegraph.lib.charts.PieChart
+                            android:id="@+id/pie_chart"
+                            android:layout_width="180dp"
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="180dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="7dp"
+                                    android:background="#346866"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="7dp"
+                                    android:text="Published"
+                                    android:textColor="@color/grey"
+                                    android:fontFamily="@font/poppinsmedium"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="14"
+                                    android:layout_margin="7dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppinsbold"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="7dp"
+                                    android:background="#aed585"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="7dp"
+                                    android:text="Internal"
+                                    android:textColor="@color/grey"
+                                    android:fontFamily="@font/poppinsmedium"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2"
+                                    android:layout_margin="7dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppinsbold"/>
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="7dp"
+                                    android:background="#f4a13c"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="7dp"
+                                    android:text="Private"
+                                    android:textColor="@color/grey"
+                                    android:fontFamily="@font/poppinsmedium"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2"
+                                    android:layout_margin="7dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppinsbold"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="7dp"
+                                    android:background="#fed931"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="7dp"
+                                    android:text="On Hold"
+                                    android:textColor="@color/grey"
+                                    android:fontFamily="@font/poppinsmedium"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2"
+                                    android:layout_margin="7dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppinsbold"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="7dp"
+                                    android:background="#96a5be"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="7dp"
+                                    android:text="Closed"
+                                    android:textColor="@color/grey"
+                                    android:fontFamily="@font/poppinsmedium"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4"
+                                    android:layout_margin="7dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppinsbold"/>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/hiringLL"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@id/pieLL"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hiring Pipeline"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View More"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/primaryGreen"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/taskLL"
+                        android:background="@color/lightGrey" />
+
+                    <LinearLayout
+                        android:id="@+id/job1LL"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hiringLL"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height= "wrap_content"
+                            android:text="Senior Product Design"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/primaryGreen"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Stage : Screening"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Application 126"
+                                android:layout_weight="1"
+                                android:textAlignment="textEnd"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:textColor="@color/grey"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#8FAAA9" >
+
+
+                                </View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="18dp"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:text="124" />
+
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="@color/primaryGreen" >
+                                </View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:textColor="@color/white"
+                                    android:layout_marginTop="18dp"
+                                    android:gravity="center"
+                                    android:text="80" />
+
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="120dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#f2f7f9" >
+                                </View>
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="180dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#f2f7f9" >
+                                </View>
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="240dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#f2f7f9" >
+                                </View>
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="300dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#f2f7f9" >
+                                </View>
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/line4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@id/taskLL"
+                            android:background="@color/lightGrey" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/job2LL"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/job1LL"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height= "wrap_content"
+                            android:text="UI/UX Designer"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/primaryGreen"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Stage : Design Challenge"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Application 126"
+                                android:layout_weight="1"
+                                android:textAlignment="textEnd"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:textColor="@color/grey"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#ffb970" >
+
+
+                                </View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="18dp"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:text="124" />
+
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#ffb970" >
+                                </View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:textColor="@color/white"
+                                    android:layout_marginTop="18dp"
+                                    android:gravity="center"
+                                    android:text="80" />
+
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="120dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#fe8301" >
+                                </View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="140dp"
+                                    android:textColor="@color/white"
+                                    android:layout_marginTop="18dp"
+                                    android:gravity="center"
+                                    android:text="56" />
+
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="180dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#f2f7f9" >
+                                </View>
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="240dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#f2f7f9" >
+                                </View>
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="300dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#f2f7f9" >
+                                </View>
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/line6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@id/job2LL"
+                            android:background="@color/lightGrey" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/job3LL"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/job2LL"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height= "wrap_content"
+                            android:text="UX Researcher"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/primaryGreen"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Stage : Interview"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Application 126"
+                                android:layout_weight="1"
+                                android:textAlignment="textEnd"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:textColor="@color/grey"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#ddafe0" >
+
+
+                                </View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="18dp"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:text="124" />
+
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#ddafe0" >
+                                </View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:textColor="@color/white"
+                                    android:layout_marginTop="18dp"
+                                    android:gravity="center"
+                                    android:text="80" />
+
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="120dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#ddafe0" >
+                                </View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="140dp"
+                                    android:textColor="@color/white"
+                                    android:layout_marginTop="18dp"
+                                    android:gravity="center"
+                                    android:text="56" />
+
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="180dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#c16fc9" >
+                                </View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="200dp"
+                                    android:textColor="@color/white"
+                                    android:layout_marginTop="18dp"
+                                    android:gravity="center"
+                                    android:text="32" />
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="240dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#f2f7f9" >
+                                </View>
+                                <View
+                                    android:layout_width="55dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="300dp"
+                                    android:layout_marginTop="14dp"
+                                    android:background="#f2f7f9" >
+                                </View>
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/line6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@id/job2LL"
+                            android:background="@color/lightGrey" />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
 
 
             </RelativeLayout>
