@@ -1,38 +1,41 @@
 package com.shreyxnsh.tiimi.ui;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.shreyxnsh.tiimi.R;
-import com.shreyxnsh.tiimi.ui.dashboard.TodayFragment;
+import com.shreyxnsh.tiimi.ui.dashboard.NotificationActivity;
 
 import org.eazegraph.lib.charts.PieChart;
 import org.eazegraph.lib.models.PieModel;
 
 
+@SuppressWarnings("ALL")
 public class DashboardFragment extends Fragment {
 
     private PieChart chart;
-    private float i1 = 16.7f;
+    private final float i1 = 16.7f;
     private float i2 = 8.3f;
     private float i3 = 8.3f;
     private float i4 = 8.3f;
-
     private float i5 = 58.3f;
+
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
 
     }
 
@@ -49,6 +52,19 @@ public class DashboardFragment extends Fragment {
 
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.notification:
+                Intent intent = new Intent(getActivity(), NotificationActivity.class);
+                startActivity(intent);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+    @SuppressLint("MissingInflatedId")
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -61,4 +77,5 @@ public class DashboardFragment extends Fragment {
         return view;
 
     }
+
 }

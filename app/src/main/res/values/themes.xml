@@ -13,4 +13,11 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="poppins_semibold" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/poppinsemibold</item>
+    </style>
+    <style name="poppins_medium" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+    </style>
 </resources>

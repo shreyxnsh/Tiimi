@@ -3,6 +3,7 @@ package com.shreyxnsh.tiimi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
         navController = Navigation.findNavController(this,R.id.frame_layout);
 
         NavigationUI.setupWithNavController(bottomNavigationView,navController);
