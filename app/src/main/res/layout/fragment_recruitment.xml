@@ -28,7 +28,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/facultydemo"/>
+                        android:src="@drawable/man1"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -36,6 +36,7 @@
                         android:layout_weight="1.75"
                         android:orientation="vertical">
                         <TextView
+                            android:id="@+id/nameTV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Jane Cooper"
@@ -93,7 +94,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/facultydemo"/>
+                        android:src="@drawable/man2"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -157,7 +158,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/facultydemo"/>
+                        android:src="@drawable/woman1"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -221,7 +222,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/facultydemo"/>
+                        android:src="@drawable/woman2"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -285,7 +286,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/facultydemo"/>
+                        android:src="@drawable/man6"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -349,7 +350,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/facultydemo"/>
+                        android:src="@drawable/man4"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -413,7 +414,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/facultydemo"/>
+                        android:src="@drawable/man5"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"

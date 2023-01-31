@@ -8,10 +8,14 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 import com.shreyxnsh.tiimi.R;
 import com.shreyxnsh.tiimi.ui.inbox.MyViewPagerAdapter;
+
+import org.w3c.dom.Text;
 
 
 public class InboxFragment extends Fragment {
@@ -34,6 +38,7 @@ public class InboxFragment extends Fragment {
 
         tabLayout = view.findViewById(R.id.tab_layout);
         viewPager2 = view.findViewById(R.id.view_pager);
+
         myViewPagerAdapter = new MyViewPagerAdapter(getActivity());
         viewPager2.setAdapter(myViewPagerAdapter);
 

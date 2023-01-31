@@ -21,4 +21,7 @@
     <style name="poppins_medium" parent="android:Widget.TextView">
         <item name="android:fontFamily">@font/poppinsmedium</item>
     </style>
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/poppinsbold</item>
+    </style>
 </resources>
