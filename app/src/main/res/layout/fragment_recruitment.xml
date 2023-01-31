@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f7f9"
+    tools:context=".ui.inbox.RecruitmentFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/facultydemo"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jane Cooper"
+                            android:layout_marginTop="10dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jobs: Senior Product Designer"
+                            android:fontFamily="@font/poppinsemibold"
+                            android:textSize="13sp"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Design Team"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 days ago"
+                        android:layout_margin="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/lightGrey"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/grey"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/facultydemo"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Arlene McCoy"
+                            android:layout_marginTop="10dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jobs: Senior Product Designer"
+                            android:fontFamily="@font/poppinsemibold"
+                            android:textSize="13sp"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Design Team"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 days ago"
+                        android:layout_margin="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/lightGrey"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/grey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item2"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/facultydemo"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Darlene Robertson"
+                            android:layout_marginTop="10dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jobs: Senior Product Designer"
+                            android:fontFamily="@font/poppinsemibold"
+                            android:textSize="13sp"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Design Team"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 days ago"
+                        android:layout_margin="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/lightGrey"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/grey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item3"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/facultydemo"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evelyn Diane"
+                            android:layout_marginTop="10dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jobs: Senior Product Designer"
+                            android:fontFamily="@font/poppinsemibold"
+                            android:textSize="13sp"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Design Team"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 days ago"
+                        android:layout_margin="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/lightGrey"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/grey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item4"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/facultydemo"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Guy Hawkins"
+                            android:layout_marginTop="10dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jobs: Senior Product Designer"
+                            android:fontFamily="@font/poppinsemibold"
+                            android:textSize="13sp"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Design Team"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 days ago"
+                        android:layout_margin="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/lightGrey"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/grey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/facultydemo"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Porter Robinson"
+                            android:layout_marginTop="10dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jobs: Senior Product Designer"
+                            android:fontFamily="@font/poppinsemibold"
+                            android:textSize="13sp"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Design Team"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 week ago"
+                        android:layout_margin="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/lightGrey"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/grey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item6"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/facultydemo"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.75"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jane Cooper"
+                            android:layout_marginTop="10dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jobs: Senior Product Designer"
+                            android:fontFamily="@font/poppinsemibold"
+                            android:textSize="13sp"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Design Team"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 days ago"
+                        android:layout_margin="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/lightGrey"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/grey"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
