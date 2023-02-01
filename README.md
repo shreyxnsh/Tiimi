@@ -5,9 +5,9 @@
 
 Tiimi is a prototype clone of the very famous Tiimi - HR Management System application User Interface.
 
-## Screenshots
+## Demonstration
 
-![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
+![](https://github.com/shreyxnsh/Tiimi/blob/master/tiimi_gif.gif)
 
 ## Screenshots
 
