@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.inbox.WorkFragment">
+    tools:context=".ui.jobs.InactiveFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,7 +17,9 @@
             android:gravity="center"
             android:layout_marginBottom="150dp"
             android:textSize="20sp"
-            android:text="Thats all folks! Check the Recruitment Tab" />
+            android:text="Thats all folks! Check the Active Tab" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </FrameLayout>

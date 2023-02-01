@@ -6,7 +6,7 @@
     <string name="inbox">Inbox</string>
     <string name="candidates">Candidates</string>
     <string name="jobs">Jobs</string>
-    <string name="emoji">&#128077; &#128077; &#128077; &#128077; &#128077;</string>
+    <string name="emoji">&#128077; &#128077; &#128077; </string>
     <string name="msg1">Hello, here is the file you requested before. Please checkout this attachment and let me know of you need something else.</string>
     <string name="msg2">Hi Cody, thankyou, I will check this out and let you know if we need something else. Thankyou</string>
 </resources>

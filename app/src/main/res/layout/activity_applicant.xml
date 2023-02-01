@@ -61,7 +61,7 @@
         <TextView
             android:id="@+id/whatsappTV"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:text="WhatsApp"
             android:background="@drawable/round_back_white"
             android:gravity="center"
